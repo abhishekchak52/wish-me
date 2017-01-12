@@ -1,0 +1,28 @@
+body{
+	background-color: white
+}
+div {
+
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 30px 50px 30px 50px;
+	transform: translate(-50%,-50%);
+
+}
+div:hover{
+	background-color: #4AB1D4;
+}
+a {
+	color: #4AB1D4;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	text-decoration: none;
+	font-size: 20px;
+}
+a:hover {
+	color: white;
+	
+
+}
