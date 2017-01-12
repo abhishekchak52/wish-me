@@ -1,28 +1,53 @@
+/* Basic styling for the page that is device independent */
 body{
 	background-color: white
 }
-div {
-
-	background-color: white;
+body *{
+	font-family: 'Roboto', sans-serif;
+}
+div{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	padding: 30px 50px 30px 50px;
+	padding: 20px 40px 20px 40px;
 	transform: translate(-50%,-50%);
-
 }
-div:hover{
-	background-color: #4AB1D4;
+h1 {
+	position: absolute;
+	top:35%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color:#565c66;
+	font-size: 40px;
 }
-a {
-	color: #4AB1D4;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bolder;
-	text-decoration: none;
-	font-size: 20px;
+a{
+	text-align: center;
+		
+		font-weight: bolder;
+		text-decoration: none;
+		font-size: 20px;
 }
-a:hover {
-	color: white;
-	
-
+/* Now for small screen devices */
+@media only screen and (min-width : 320px) and (max-width : 1224px){
+	div {
+		background-color: #565c66;
+	}
+	a {
+		color: white;
+	}
+}
+/* For computers */
+@media only screen  and (min-width : 1224px){
+	div {
+		background-color: white;
+	}
+	div:hover{
+		background-color: #565c66;
+	}
+	a {
+		color: #565c66;
+	}
+	a:hover {
+		color: white;
+	}
 }
