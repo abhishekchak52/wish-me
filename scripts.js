@@ -55,7 +55,7 @@
       function handleAddClick(){
         var event = {
           'summary': 'Abhishek\'s Birthday',
-          'description': 'OK',
+          'description': 'Lorem Ipsum',
           'start': {
             'date' : '2017-08-01',
             'timeZone': 'Asia/Kolkata'
@@ -84,6 +84,6 @@
       request.execute(function(event) {
         authPrompt = true;
       	document.getElementById('confirmation').style.visibility='visible';
-      	document.getElementById('confirm').href = event.htmlLink;
+      	document.getElementById('confirm').href = "https://calendar.google.com/calendar/render?eid=".concat(event.htmlLink.split("=")[1]);
       });
   } 
