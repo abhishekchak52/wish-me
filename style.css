@@ -69,8 +69,7 @@ h1 {
 	#confirm{
 		display: none;
 	}
-	#phone-confirmation{
-		visibility: visible;
+	#phone-confirm{
 		font-size: 4vw;
 	}
 }
@@ -101,10 +100,8 @@ h1 {
 		transform: translate(-50%,-10vw);	
 		font-size: 5vw;
 	}
-	#confirm{
-		visibility: visible;
-	}
-	#phone-confirmation{
+	#phone-confirm{
 		display: none;
+	}
 	}
 }
