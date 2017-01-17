@@ -12,6 +12,7 @@ body *{
 	left: 50%;
 	font-weight: bold;
 	color: #565c66;
+	text-align: center;
 }
 #confirm{
 	cursor: pointer;
@@ -60,12 +61,17 @@ h1 {
 	}
 	#confirmation{
 		transform: translate(-50%,15vw);
-		font-size: 5vw;
 	}
 	h1{
 		transform: translate(-50%,-18vw);	
 		font-size: 9vw;
-
+	}
+	#confirm{
+		display: none;
+	}
+	#phone-confirmation{
+		visibility: visible;
+		font-size: 4vw;
 	}
 }
 /* For computers */
@@ -80,6 +86,12 @@ h1 {
 		color: white;
 	  	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	
 	}
+	input.button:active{ 
+		/*Simulate a button press.*/
+		box-shadow: 0 7px 18px 0 rgba(0,0,0,0.24), 0 9px 20px 0 rgba(0,0,0,0.19);	
+		transform: translateX(-50%) translateY(2px);
+		transition-duration: 0.1s;
+	}
 	#confirmation{
 		transform: translate(-50%,25vh);
 		font-size: 1.4vw;
@@ -88,5 +100,11 @@ h1 {
 	h1{
 		transform: translate(-50%,-10vw);	
 		font-size: 5vw;
+	}
+	#confirm{
+		visibility: visible;
+	}
+	#phone-confirmation{
+		display: none;
 	}
 }
